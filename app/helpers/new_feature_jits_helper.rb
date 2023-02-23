@@ -1,0 +1,2 @@
+module NewFeatureJitsHelper
+end

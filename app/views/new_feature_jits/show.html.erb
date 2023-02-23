@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @new_feature_jit %>
+
+<div>
+  <%= link_to "Edit this new feature jit", edit_new_feature_jit_path(@new_feature_jit) %> |
+  <%= link_to "Back to new feature jits", new_feature_jits_path %>
+
+  <%= button_to "Destroy this new feature jit", @new_feature_jit, method: :delete %>
+</div>

@@ -1,0 +1,27 @@
+<%= form_with(model: new_feature_jit) do |form| %>
+  <% if new_feature_jit.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(new_feature_jit.errors.count, "error") %> prohibited this new_feature_jit from being saved:</h2>
+
+      <ul>
+        <% new_feature_jit.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :content, style: "display: block" %>
+    <%= form.text_field :content %>
+  </div>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

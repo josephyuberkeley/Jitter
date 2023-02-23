@@ -1,0 +1,2 @@
+class NewFeatureJit < ApplicationRecord
+end
