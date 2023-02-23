@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :new_feature_jits
   resources :jits
   resources :forums
   resources :twerps

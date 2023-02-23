@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>New feature jits</h1>
+
+<div id="new_feature_jits">
+  <% @new_feature_jits.each do |new_feature_jit| %>
+    <%= render new_feature_jit %>
+    <p>
+      <%= link_to "Show this new feature jit", new_feature_jit %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New new feature jit", new_new_feature_jit_path %>
